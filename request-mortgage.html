@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    </head>
+    <body>
+        <nav class="relative w-full flex items-center justify-center">
+            <div class="fixed top-0 flex items-center justify-between w-full max-w-[1130px] rounded-3xl p-4 bg-white mt-[30px] z-30">
+                <a href="index.html" class="flex shrink-0">
+                    <img src="assets/images/logos/logo-black.svg" alt="logo">
+                </a>
+                <ul class="flex items-center gap-[30px]">
+                    <li class="group">
+                        <a href="index.html" class="hover:font-bold group-[.active]:font-bold transition-all duration-300">Home</a>
+                    </li>
+                    <li class="group">
+                        <a href="category.html" class="hover:font-bold group-[.active]:font-bold transition-all duration-300">Browse</a>
+                    </li>
+                    <li class="group">
+                        <a href="#" class="hover:font-bold group-[.active]:font-bold transition-all duration-300">Rewards</a>
+                    </li>
+                    <li class="group">
+                        <a href="#" class="hover:font-bold group-[.active]:font-bold transition-all duration-300">Stories</a>
+                    </li>
+                </ul>
+                <button id="Profile" class="relative">
+                    <div class="flex items-center gap-[14px]">
+                        <div class="flex text-right flex-col gap-0.5">
+                            <p class="text-sm text-tedja-secondary">Howdy,</p>
+                            <p class="font-semibold">Sarina Dwi</p>
+                        </div>
+                        <div class="flex rounded-full size-[50px] overflow-hidden">
+                            <img src="assets/images/photos/profile.png" class="w-full h-full object-cover" alt="photo">
+                        </div>
+                    </div>
+                    <ul class="hidden absolute top-full mt-[10px] right-0 flex flex-col w-[170px] shrink-0 h-fit text-left rounded-xl border border-tedja-border py-5 px-5 bg-white shadow-[0px_10px_30px_0px_#B8B8B840] gap-[14px]">
+                        <li>
+                            <a href="#" class="hover:text-tedja-blue transition-all duration-300">Rewards</a>
+                        </li>
+                        <li>
+                            <a href="my-mortgages.html" class="hover:text-tedja-blue transition-all duration-300">My Mortgages</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-tedja-blue transition-all duration-300">Learn Property</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-tedja-blue transition-all duration-300">Settings</a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="hover:text-tedja-blue transition-all duration-300">Logout</a>
+                        </li>
+                    </ul>
+                </button>
+            </div>
+        </nav>
+        <div class="relative w-full max-w-[1280px] px-[75px] mt-[164px] flex flex-col gap-[6px] text-center items-center mx-auto">
+            <h1 class="font-bold text-4xl leading-[54px]">Request for Mortgage</h1>
+            <p>We will give you best of life forever young yay</p>
+            <a href="details.html" class="absolute transform -translate-y-1/2 top-1/2 left-[75px] flex items-center gap-[6px] hover:text-tedja-blue transition-all duration-300">
+                <img src="assets/images/icons/arrow-left.svg" class="size-6 flex shrink-0" alt="icon"> 
+                <span class="font-semibold">Back to Details</span>
+            </a>
+        </div>
+        <div class="flex justify-center gap-[30px] mt-[50px] mb-[70px]">
+            <div class="relative">
+                <div class="sticky top-[144px] flex flex-col w-[357px] shrink-0 h-fit rounded-[30px] ring-1 ring-tedja-border p-[10px] pb-5 gap-3 bg-white">
+                    <div class="thumbnail-container relative w-full h-[240px] rounded-[30px] overflow-hidden">
+                        <img src="assets/images/thumbnails/thumbnails-6.png" class="w-full h-full object-cover" alt="thumbnail">
+                    </div>
+                    <div class="flex flex-col gap-[18px] px-[10px]">
+                        <div class="flex flex-col gap-[6px]">
+                            <h3 class="font-bold text-lg">Anggana Parahyangan Golf</h3>
+                            <div class="flex items-center gap-[6px]">
+                                <img src="assets/images/icons/location.svg" class="size-5 flex shrink-0" alt="icon">
+                                <p class="font-semibold text-sm">Melon, Bandung</p>
+                            </div>
+                        </div>
+                        <hr class="border-tedja-border">
+                        <div class="grid grid-cols-2 gap-y-[18px] gap-x-3">
+                            <div class="flex items-center rounded-[14px] border border-tedja-border p-[10px] gap-[6px]">
+                                <img src="assets/images/icons/slider-vertical.svg" class="size-5 flex shrink-0" alt="icon">
+                                <p class="font-semibold text-sm">8 Bedroom</p>
+                            </div>
+                            <div class="flex items-center rounded-[14px] border border-tedja-border p-[10px] gap-[6px]">
+                                <img src="assets/images/icons/slider-horizontal.svg" class="size-5 flex shrink-0" alt="icon">
+                                <p class="font-semibold text-sm">2 Bathroom</p>
+                            </div>
+                            <div class="flex items-center rounded-[14px] border border-tedja-border p-[10px] gap-[6px]">
+                                <img src="assets/images/icons/building-3.svg" class="size-5 flex shrink-0" alt="icon">
+                                <p class="font-semibold text-sm">224 M²</p>
+                            </div>
+                            <div class="flex items-center rounded-[14px] border border-tedja-border p-[10px] gap-[6px]">
+                                <img src="assets/images/icons/maximize-3.svg" class="size-5 flex shrink-0" alt="icon">
+                                <p class="font-semibold text-sm">320 M²</p>
+                            </div>
+                            <div class="flex items-center rounded-[14px] border border-tedja-border p-[10px] gap-[6px]">
+                                <img src="assets/images/icons/note-favorite.svg" class="size-5 flex shrink-0" alt="icon">
+                                <p class="font-semibold text-sm">SHGB</p>
+                            </div>
+                            <div class="flex items-center rounded-[14px] border border-tedja-border p-[10px] gap-[6px]">
+                                <img src="assets/images/icons/flash.svg" class="size-5 flex shrink-0" alt="icon">
+                                <p class="font-semibold text-sm">2980 Watts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 w-[500px] shrink-0">
+                <section id="Price-Details" class="border border-[#F2F2F4] bg-white !h-fit w-full p-5 rounded-[20px] flex flex-col gap-4">
+                    <div class="flex items-center justify-between">
+                        <h4 class="font-semibold text-lg leading-[27px]">Price Details</h4>
+                        <button type="button" class="shrink-0" data-expand="PriceDetails">
+                            <img src="assets/images/icons/arrow-circle-down.svg" alt="icon" class="size-6 shrink-0 transition-all duration-300">
+                        </button>
+                    </div>
+                    <div class="flex flex-col gap-4" id="PriceDetails">
+                        <hr class="border-[#F2F2F4]">
+                        <div class="flex flex-col gap-4">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="assets/images/icons/note.svg" alt="icon" class="size-6 shrink-0">
+                                    <p>House Price</p>
+                                </div>
+                                <strong class="font-semibold">Rp 289.000.000</strong>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="assets/images/icons/note.svg" alt="icon" class="size-6 shrink-0">
+                                    <p>Security Fee</p>
+                                </div>
+                                <strong class="font-semibold">Free Included</strong>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="assets/images/icons/note.svg" alt="icon" class="size-6 shrink-0">
+                                    <p>New Registration</p>
+                                </div>
+                                <strong class="font-semibold">Free Included</strong>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="Bank-Details" class="border border-[#F2F2F4] bg-white !h-fit w-full p-5 rounded-[20px] flex flex-col gap-4">
+                    <div class="flex items-center justify-between">
+                        <h4 class="font-semibold text-lg leading-[27px]">Bank KPR Details</h4>
+                        <button type="button" class="shrink-0" data-expand="BankDetails">
+                            <img src="assets/images/icons/arrow-circle-down.svg" alt="icon" class="size-6 shrink-0 transition-all duration-300">
+                        </button>
+                    </div>
+                    <div class="flex flex-col gap-4" id="BankDetails">
+                        <hr class="border-[#F2F2F4]">
+                        <div class="flex items-center gap-5">
+                            <div class="flex h-[70px] shrink-0 overflow-hidden">
+                                <img src="assets/images/logos/mandiri.svg" class="w-full h-full object-contain" alt="bank logo">
+                            </div>
+                            <div class="flex flex-col gap-0.5">
+                                <div class="flex items-center gap-0.5">
+                                    <p class="font-semibold">Mandiri KPR</p>
+                                    <img src="assets/images/icons/verify.svg" class="size-5 flex shrink-0" alt="icon">
+                                </div>
+                                <p class="text-sm text-tedja-secondary">Dipercaya jutaan nasabah</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="assets/images/icons/note.svg" alt="icon" class="size-6 shrink-0">
+                                    <p>Bank Interest Guarantee</p>
+                                </div>
+                                <strong class="font-semibold">14%</strong>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="assets/images/icons/note.svg" alt="icon" class="size-6 shrink-0">
+                                    <p>Loan Duration</p>
+                                </div>
+                                <strong class="font-semibold">10 Years</strong>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="Choose-Amount" class="border border-[#F2F2F4] bg-white !h-fit w-full p-5 rounded-[20px] flex flex-col gap-4">
+                    <h4 class="font-semibold text-lg leading-[27px]">Choose DP Amount</h4>
+                    <div class="grid grid-cols-3 gap-y-4 gap-x-5" id="dp-options">
+                        <a href="#" data-percentage="10" class="dp-option group relative rounded-[14px] border border-tedja-border py-[14px] px-[10px] flex items-center justify-center hover:bg-tedja-black transition-all duration-300">
+                            <span class="font-semibold group-hover:text-white transition-all duration-300">10%</span>
+                        </a>
+                        <a href="#" data-percentage="20" class="dp-option group relative rounded-[14px] border border-tedja-border py-[14px] px-[10px] flex items-center justify-center hover:bg-tedja-black transition-all duration-300">
+                            <span class="font-semibold group-hover:text-white transition-all duration-300">20%</span>
+                        </a>
+                        <a href="#" data-percentage="40" class="dp-option group relative rounded-[14px] border border-tedja-border py-[14px] px-[10px] flex items-center justify-center hover:bg-tedja-black transition-all duration-300">
+                            <span class="font-semibold group-hover:text-white transition-all duration-300">40%</span>
+                        </a>
+                        <a href="#" data-percentage="50" class="dp-option group relative rounded-[14px] border border-tedja-border py-[14px] px-[10px] flex items-center justify-center hover:bg-tedja-black transition-all duration-300">
+                            <span class="font-semibold group-hover:text-white transition-all duration-300">50%</span>
+                        </a>
+                        <a href="#" data-percentage="60" class="dp-option group relative rounded-[14px] border border-tedja-border py-[14px] px-[10px] flex items-center justify-center hover:bg-tedja-black transition-all duration-300">
+                            <span class="font-semibold group-hover:text-white transition-all duration-300">60%</span>
+                        </a>
+                        <a href="#" data-percentage="80" class="dp-option group relative rounded-[14px] border border-tedja-border py-[14px] px-[10px] flex items-center justify-center hover:bg-tedja-black transition-all duration-300">
+                            <span class="font-semibold group-hover:text-white transition-all duration-300">80%</span>
+                        </a>
+                    </div>
+                </section>
+                <section id="KPR-Payment-Details" class="border border-[#F2F2F4] bg-white !h-fit w-full p-5 rounded-[20px] flex flex-col gap-4">
+                    <div class="flex items-center justify-between">
+                        <h4 class="font-semibold text-lg leading-[27px]">KPR Payment Details</h4>
+                        <button type="button" class="shrink-0" data-expand="KPRPaymentDetails">
+                            <img src="assets/images/icons/arrow-circle-down.svg" alt="icon" class="size-6 shrink-0 transition-all duration-300">
+                        </button>
+                    </div>
+                    <div class="flex flex-col gap-4" id="KPRPaymentDetails">
+                        <hr class="border-[#F2F2F4]">
+                        <div class="flex flex-col gap-4">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="assets/images/icons/note.svg" alt="icon" class="size-6 shrink-0">
+                                    <p>Down Payment</p>
+                                </div>
+                                <strong class="font-semibold"><span id="down-payment-amount">Rp 57.800.000</span> (<span id="down-payment-percent">10%</span>)</strong>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="assets/images/icons/note.svg" alt="icon" class="size-6 shrink-0">
+                                    <p>Total Loan Amount</p>
+                                </div>
+                                <strong class="font-semibold"><span id="total-loan">Rp 231.200.000</span></strong>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="assets/images/icons/note.svg" alt="icon" class="size-6 shrink-0">
+                                    <p>Monthly Payment</p>
+                                </div>
+                                <strong class="font-semibold"><span id="monthly-payment">Rp 3.589.760</span></strong>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="assets/images/icons/note.svg" alt="icon" class="size-6 shrink-0">
+                                    <p>Monthly PPN 11%</p>
+                                </div>
+                                <strong class="font-semibold"><span id="monthly-ppn">Rp 394.874</span></strong>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="assets/images/icons/note.svg" alt="icon" class="size-6 shrink-0">
+                                    <p>Monthly Insurance</p>
+                                </div>
+                                <strong class="font-semibold"><span id="monthly-insurance">Rp 900.000</span></strong>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="assets/images/icons/note.svg" alt="icon" class="size-6 shrink-0">
+                                    <p>Loan + Interests Amount</p>
+                                </div>
+                                <strong class="font-bold text-xl text-tedja-blue"><span id="loan-with-interest">Rp 430.771.197</span></strong>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <form action="request-successful.html" id="Request-Mortage" class="border border-[#F2F2F4] bg-white !h-fit w-full p-5 rounded-[20px] flex flex-col gap-5">
+                    <h4 class="font-semibold text-lg leading-[27px]">Request for Mortgage</h4>
+                    <input type="hidden" name="dp_percentage" id="dp-percentage" value="">
+                    <input type="hidden" id="interestRate" value="20">
+                    <input type="hidden" id="durationYears" value="10">
+                    <input type="hidden" id="housePrice" value="288000000">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center gap-[6px]">
+                            <img src="assets/images/icons/tick-circle.svg" class="size-6 flex shrink-0" alt="icon">
+                            <p class="font-semibold">FC KTP, NPWP, KK, Akte</p>
+                        </div>
+                        <div class="flex items-center gap-[6px]">
+                            <img src="assets/images/icons/tick-circle.svg" class="size-6 flex shrink-0" alt="icon">
+                            <p class="font-semibold">Rekening Koran 6 Bulan</p>
+                        </div>
+                        <div class="flex items-center gap-[6px]">
+                            <img src="assets/images/icons/tick-circle.svg" class="size-6 flex shrink-0" alt="icon">
+                            <p class="font-semibold">Slip Gaji 3 Bulan</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p class="font-semibold">Add Your Document in .PDF</p>
+                        <label id="Input-File-Trigger" type="button" class="relative flex items-center rounded-full border border-tedja-black py-[14px] px-5 gap-[10px]">
+                            <img src="assets/images/icons/task-square.svg" class="flex size-6 shrink-0" alt="icon">
+                            <p id="File-Label" class="text-tedja-secondary">Add an attachment to request</p>
+                            <input type="file" name="" id="File-Input" class="absolute opacity-0">
+                        </label>
+                    </div>
+                    <hr class="border-[#F2F2F4]">
+                    <div class="flex items-center justify-center gap-[6px]">
+                        <img src="assets/images/icons/security-safe-blue-fill.svg" class="size-6 flex shrink-0" alt="icon">
+                        <p class="font-semibold">All your privacy data secured with our system</p>
+                    </div>
+                    <hr class="border-[#F2F2F4]">
+                    <button type="submit" class="rounded-full py-[14px] px-5 bg-tedja-green w-full text-center font-semibold">Request for Mortgage Now</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/accordion.js"></script>
+        <script src="js/navbar-dropdown.js"></script>
+        <script src="js/file-input.js"></script>
+        <script src="js/request-mortage.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    </head>
+    <body>
+        <nav class="relative w-full flex items-center justify-center">
+            <div class="fixed top-0 flex items-center justify-between w-full max-w-[1130px] rounded-3xl p-4 bg-white mt-[30px] z-30">
+                <a href="index.html" class="flex shrink-0">
+                    <img src="assets/images/logos/logo-black.svg" alt="logo">
+                </a>
+                <ul class="flex items-center gap-[30px]">
+                    <li class="group">
+                        <a href="index.html" class="hover:font-bold group-[.active]:font-bold transition-all duration-300">Home</a>
+                    </li>
+                    <li class="group">
+                        <a href="category.html" class="hover:font-bold group-[.active]:font-bold transition-all duration-300">Browse</a>
+                    </li>
+                    <li class="group">
+                        <a href="#" class="hover:font-bold group-[.active]:font-bold transition-all duration-300">Rewards</a>
+                    </li>
+                    <li class="group">
+                        <a href="#" class="hover:font-bold group-[.active]:font-bold transition-all duration-300">Stories</a>
+                    </li>
+                </ul>
+                <button id="Profile" class="relative">
+                    <div class="flex items-center gap-[14px]">
+                        <div class="flex text-right flex-col gap-0.5">
+                            <p class="text-sm text-tedja-secondary">Howdy,</p>
+                            <p class="font-semibold">Sarina Dwi</p>
+                        </div>
+                        <div class="flex rounded-full size-[50px] overflow-hidden">
+                            <img src="assets/images/photos/profile.png" class="w-full h-full object-cover" alt="photo">
+                        </div>
+                    </div>
+                    <ul class="hidden absolute top-full mt-[10px] right-0 flex flex-col w-[170px] shrink-0 h-fit text-left rounded-xl border border-tedja-border py-5 px-5 bg-white shadow-[0px_10px_30px_0px_#B8B8B840] gap-[14px]">
+                        <li>
+                            <a href="#" class="hover:text-tedja-blue transition-all duration-300">Rewards</a>
+                        </li>
+                        <li>
+                            <a href="my-mortgages.html" class="hover:text-tedja-blue transition-all duration-300">My Mortgages</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-tedja-blue transition-all duration-300">Learn Property</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-tedja-blue transition-all duration-300">Settings</a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="hover:text-tedja-blue transition-all duration-300">Logout</a>
+                        </li>
+                    </ul>
+                </button>
+            </div>
+        </nav>
+        <div class="flex justify-center gap-[50px] mt-[202px] mb-[70px]">
+            <div class="flex flex-col h-fit rounded-[30px] ring-1 ring-tedja-border p-[10px] pb-5 gap-3 bg-white">
+                <div class="thumbnail-container relative w-full h-[240px] rounded-[30px] overflow-hidden">
+                    <img src="assets/images/thumbnails/thumbnails-6.png" class="w-full h-full object-cover" alt="thumbnail">
+                </div>
+                <div class="flex flex-col gap-[18px] px-[10px]">
+                    <div class="flex flex-col gap-[6px]">
+                        <h3 class="font-bold text-lg">Anggana Parahyangan Golf</h3>
+                        <div class="flex items-center gap-[6px]">
+                            <img src="assets/images/icons/location.svg" class="size-5 flex shrink-0" alt="icon">
+                            <p class="font-semibold text-sm">Melon, Bandung</p>
+                        </div>
+                    </div>
+                    <hr class="border-tedja-border">
+                    <div class="grid grid-cols-2 gap-y-[18px] gap-x-3">
+                        <div class="flex items-center rounded-[14px] border border-tedja-border p-[10px] gap-[6px]">
+                            <img src="assets/images/icons/slider-vertical.svg" class="size-5 flex shrink-0" alt="icon">
+                            <p class="font-semibold text-sm">8 Bedroom</p>
+                        </div>
+                        <div class="flex items-center rounded-[14px] border border-tedja-border p-[10px] gap-[6px]">
+                            <img src="assets/images/icons/slider-horizontal.svg" class="size-5 flex shrink-0" alt="icon">
+                            <p class="font-semibold text-sm">2 Bathroom</p>
+                        </div>
+                        <div class="flex items-center rounded-[14px] border border-tedja-border p-[10px] gap-[6px]">
+                            <img src="assets/images/icons/building-3.svg" class="size-5 flex shrink-0" alt="icon">
+                            <p class="font-semibold text-sm">224 M²</p>
+                        </div>
+                        <div class="flex items-center rounded-[14px] border border-tedja-border p-[10px] gap-[6px]">
+                            <img src="assets/images/icons/maximize-3.svg" class="size-5 flex shrink-0" alt="icon">
+                            <p class="font-semibold text-sm">320 M²</p>
+                        </div>
+                        <div class="flex items-center rounded-[14px] border border-tedja-border p-[10px] gap-[6px]">
+                            <img src="assets/images/icons/note-favorite.svg" class="size-5 flex shrink-0" alt="icon">
+                            <p class="font-semibold text-sm">SHGB</p>
+                        </div>
+                        <div class="flex items-center rounded-[14px] border border-tedja-border p-[10px] gap-[6px]">
+                            <img src="assets/images/icons/flash.svg" class="size-5 flex shrink-0" alt="icon">
+                            <p class="font-semibold text-sm">2980 Watts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col w-[499px] shrink-0 gap-[33px] justify-center items-center">
+                <img src="assets/images/icons/crown-green-fill.svg" class="size-20 flex shrink-0" alt="icon">
+                <div class="flex flex-col gap-4">
+                    <h1 class="font-bold text-2xl leading-9 text-center">It’s Done, Yay, Good Job! <br>Now is Waiting for Bank Approval</h1>
+                    <p>Kami akan membantu anda mengajukan kepada bank terkait sehingga hasil yang diharapkan sesuai dengan ekspetasi</p>
+                </div>
+                <div class="flex items-center justify-center gap-3">
+                    <a href="my-mortgages.html" class="rounded-full py-[14px] px-5 w-[194px] text-center font-semibold text-white bg-tedja-black">
+                        My Mortgages
+                    </a>
+                    <a href="index.html" class="rounded-full py-[14px] px-5 w-[194px] text-center font-semibold bg-tedja-green">
+                        Explore Houses
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/navbar-dropdown.js"></script>
+        
+    </body>
+</html>
